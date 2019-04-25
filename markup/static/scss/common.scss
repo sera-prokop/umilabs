@@ -5,18 +5,21 @@ html, body {
 }
 
 .page {
-    
+
 }
+
+// Pressed footer
 
 .page__wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
-}
-
-* html .page__wrapper {
+    display: flex;
+    flex-direction: column;
     height: 100%;
 }
 
-.page__buffer {
-    height: 50px;
+.content {
+    flex: 1 0 auto;
+}
+
+.page__footer {
+    flex: 0 0 auto;
 }
