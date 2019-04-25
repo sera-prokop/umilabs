@@ -1,2 +1,40 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
+
+.btn{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $GilroyFont;
+  text-decoration: none;
+  color: $textColor;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: none;
+  border-radius: 111px;
+}
+
+.btn--plus{
+  padding-right: 30px;
+  transition: background-color $tr;
+  &:before{
+    content: url("data:image/svg+xml;charset=utf8,%3Csvg width='14' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.167 5.833V0H5.833v5.833H0v2.334h5.833V14h2.334V8.167H14V5.833H8.167z' fill='%23F47821'/%3E%3C/svg%3E");
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($gray, 0.05);
+    border-radius: 50%;
+    margin-right: -10px;
+    transition: background-color $tr;
+  }
+  &:hover{
+    background-color: rgba($gray, 0.05);
+    &:before{
+      background-color: transparent;
+    }
+  }
+}
+
+

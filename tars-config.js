@@ -1,5 +1,7 @@
 module.exports = {
-    "postcss": [],
+    "postcss": [{
+        name: 'postcss-rgb',
+    }],
     "svg": {
         "active": true,
         "workflow": "sprite",

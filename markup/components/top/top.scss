@@ -1,5 +1,23 @@
-p{
-  font-size: 20px;
-  font-family: $DinFont;
-  font-weight: 500;
+.top{
+  text-align: center;
+  padding: 165px 0 125px;
+}
+
+.top__title{
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.top__text{
+  color: $topText;
+  margin-bottom: 45px;
+}
+
+.top__link{
+  color: $linkColor;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
 }

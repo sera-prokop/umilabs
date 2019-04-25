@@ -2,7 +2,6 @@
 
 html, body {
     height: 100%;
-    font-family: $DinFont;
 }
 
 html {
@@ -14,7 +13,8 @@ html {
 }
 
 .page {
-
+    font: 16px/1.125 $DinFont;
+    color: $textColor;
 }
 
 // Pressed footer
