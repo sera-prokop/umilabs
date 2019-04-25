@@ -4,6 +4,7 @@ html(class="no-js", lang="ru")
     include ../components/head/head.pug
     include ../components/top/top.pug
     include ../components/image-block/image-block.pug
+    include ../components/list-block/list-block.pug
     include ../components/footer/footer.pug
 
     head
@@ -19,6 +20,8 @@ html(class="no-js", lang="ru")
                 +top()
 
                 +image-block()
+
+                +list-block(listBlock)
 
             .page__footer
 

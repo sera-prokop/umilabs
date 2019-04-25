@@ -1,0 +1,18 @@
+.list-block{
+  background-color: $bgLight;
+}
+
+.list-block__list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -100px;
+}
+
+.list-block__item{
+  width: 50%;
+  background-color: white;
+
+}

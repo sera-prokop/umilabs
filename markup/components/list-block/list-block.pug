@@ -1,0 +1,8 @@
+mixin list-block(data)
+    section.list-block
+        .container
+            ul.list-block__list
+                 each item in data.list
+                     li.list-block__item
+                         h3.list-block__title=item.title
+                         p.list-block__text=item.text
