@@ -2,7 +2,7 @@ doctype html
 html(class="no-js", lang="ru")
 
     include ../components/head/head.pug
-    include ../components/example/example.pug
+    include ../components/top/top.pug
     include ../components/footer/footer.pug
 
     head
@@ -15,7 +15,10 @@ html(class="no-js", lang="ru")
             //- Include your components here
             .page__content
 
+                +top()
+
             .page__footer
+
                 +footer()
 
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
