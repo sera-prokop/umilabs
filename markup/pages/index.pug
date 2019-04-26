@@ -5,7 +5,10 @@ html(class="no-js", lang="ru")
     include ../components/top/top.pug
     include ../components/image-block/image-block.pug
     include ../components/list-block/list-block.pug
-    include ../components/footer/footer.pug
+    include ../components/text-block/text-block.pug
+    include ../components/features/features.pug
+    include ../components/form/form.pug
+    //- include ../components/footer/footer.pug
 
     head
         +head(head.defaults)
@@ -23,9 +26,15 @@ html(class="no-js", lang="ru")
 
                 +list-block(listBlock)
 
+                +text-block(textBlock)
+
+                +features(features)
+
+                +form(form)
+
             .page__footer
 
-                +footer()
+                //- +footer()
 
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();

@@ -37,4 +37,20 @@
   }
 }
 
+.btn--white{
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 111px;
+  color: $orange;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 18px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color $tr;
+  &:focus, &:hover{
+    background-color: rgba(white, 0.8);
+  }
+}
+
 

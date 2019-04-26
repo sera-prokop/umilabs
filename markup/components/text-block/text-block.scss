@@ -1,0 +1,19 @@
+.text-block{
+    max-width: 775px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.text-block__title{
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.text-block__text{
+    font-size: 16px;
+    line-height: 26px;
+    font-family: $RobotoFont;
+    margin: 0 0 40px;
+}

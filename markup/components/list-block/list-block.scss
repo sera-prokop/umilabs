@@ -1,18 +1,38 @@
 .list-block{
   background-color: $bgLight;
+  padding-bottom: 80px;
 }
 
 .list-block__list{
   margin: 0;
   padding: 0;
+  max-width: 970px;
+  margin: 0 auto;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   margin-top: -100px;
+  // border: 1px solid $borderColor;
 }
 
 .list-block__item{
   width: 50%;
   background-color: white;
+  outline: 1px solid $borderColor;
+  padding: 50px 60px 60px;
+}
 
+.list-block__title{
+  font-size: 12px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: $orange;
+  margin-bottom: 12px;
+}
+
+.list-block__text{
+  font-size: 24px;
+  line-height: 30px;
+  font-family: $RobotoFont;
+  margin: 0;
 }

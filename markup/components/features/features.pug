@@ -1,0 +1,10 @@
+mixin features(data)
+    section.features
+        .container
+            h2.features__title=data.title 
+            ul.features__list
+                each item in data.list
+                    li.features__item
+                        h3.features__subtitle=item.title
+                        p.features__text=item.text 
+

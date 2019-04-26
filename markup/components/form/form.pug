@@ -1,0 +1,19 @@
+mixin form(data)
+    section.form
+        .container.form__container
+            h2.form__title Теперь расскажите о себе.
+            form.form__form(action="#")
+                .form__field
+                    label(for="name").form__label Фамилия и имя
+                    input.form__input(type="text" placeholder="Сидоров Александр" id="name")
+                .form__field
+                    label(for="mail").form__label Электронная почта
+                    input.form__input(type="text" placeholder="mail@mail.com" id="mail")
+                .form__field
+                    label(for="phone").form__label Телефон
+                    input.form__input(type="text" placeholder="+7 (999)-328-14-20" id="phone")
+                .form__field
+                    label(for="textarea").form__label Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?
+                    textarea.form__input.form__input--textarea(placeholder="Свой проект по созданию универсальной инфраструктуры строительства" id="textarea")
+                button(type="submit").form__btn.btn.btn--white Отправить
+                

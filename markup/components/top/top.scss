@@ -12,10 +12,11 @@
 .top__text{
   color: $topText;
   margin-bottom: 45px;
+  font-family: $RobotoFont;
 }
 
 .top__link{
-  color: $linkColor;
+  color: $orange;
   text-decoration: none;
   &:hover{
     text-decoration: underline;
