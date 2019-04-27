@@ -628,6 +628,12 @@ html {
 
 .form__field {
   margin-bottom: 48px;
+  position: relative;
+}
+
+.form__field .error-block {
+  position: absolute;
+  bottom: -20px;
 }
 
 .form__label {
