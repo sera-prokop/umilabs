@@ -1,6 +1,9 @@
 .features{
     padding: 120px 0 160px;
     background-color: $bgLight;
+    @media (max-width: 767px) {
+        padding: 60px 0 80px;
+    }
 }
 
 .features__title{
@@ -17,11 +20,18 @@
     margin: 0 -35px;
     padding: 0;
     list-style-type: none;
+    @media (max-width: 767px) {
+        margin: 0;
+    }
 }
 
 .features__item{
     margin: 0 35px;
     width: calc(33.3% - 70px);
+    @media (max-width: 767px) {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .features__subtitle{

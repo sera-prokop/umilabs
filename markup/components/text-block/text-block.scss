@@ -2,6 +2,16 @@
     max-width: 775px;
     padding-top: 80px;
     padding-bottom: 100px;
+    @media (max-width: 1365px) {
+
+    }
+    @media (max-width: 991px) {
+
+    }
+    @media (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
 }
 
 .text-block__title{
