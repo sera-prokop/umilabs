@@ -6,6 +6,7 @@ import IMask from 'imask';
 const form = document.querySelector('.form__form'),
       validateFields = form.querySelectorAll('.form__input:not(textarea)'),
       mailField = form.querySelector('#mail'),
+      nameField = form.querySelector('#name'),
       phoneField = form.querySelector('#phone'),
       mailReg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/,
       phoneReg = /\+7\(\d{3}\)\d{3}-\d{2}-\d{2}/,
@@ -125,6 +126,12 @@ form.addEventListener('submit', function (e) {
   removeValidation();
 
   checkFieldsPresence();
+
+  checkFields(
+    nameReg,
+    nameField,
+    defaultErrorText
+  );
 
   checkFields(
     mailReg,
