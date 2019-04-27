@@ -107,7 +107,12 @@ let checkFields = function (reg, field, generateText) {
     (child) ? child.textContent = generateText : field.parentElement.appendChild(error);
 
   }else{
-    removeValidation();
+    let error = field.parentElement.querySelector('.error-block');
+    if(error){
+      let parent = error.parentElement;
+      parent.classList.remove('error');
+      error.remove();
+    }
   }
 };
 
@@ -133,9 +138,10 @@ form.addEventListener('submit', function (e) {
     phoneErrorText
   );
 
-  checkFieldsAll()
+  checkFieldsAll();
 
   if(form.classList.contains('validate')){
+
     var modalWindow = document.getElementById('jsModal');
 
     modalWindow.classList ? modalWindow.classList.add('open') : modalWindow.className += ' ' + 'open';
